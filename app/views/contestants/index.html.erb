@@ -1,0 +1,8 @@
+<% @contestants.each do |contestant| %>
+  <%= "Name: #{contestant.name}" %>
+  Projects: 
+  <% contestant.projects.each do |project| %>
+    <%= project.name %>%
+  <%end %>
+  <br>
+<%end %>
